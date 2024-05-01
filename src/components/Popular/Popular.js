@@ -6,7 +6,7 @@ import Item from '../Items/Item'
 export const Popular = () => {
   const[famous,setfamous]=useState([]);
   useEffect(()=>{
-      fetch('http://localhost:4000/famous')
+      fetch('https://mern-bookstore-xi.vercel.app/famous')
       .then((response)=>response.json())
       .then((data)=>setfamous(data))
   },[])
